@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Podcast App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f3f4f6; margin: 0; padding: 0; }
+        header { background: #4CAF50; color: white; padding: 10px 20px; text-align: center; }
+        .container { max-width: 800px; margin: auto; Padding: 20px; }
+        h1 { font-size: 24px; margin: 0; }
+        .player, .favorites, .browse { padding: 20px; background: white; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .button { background: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+        .button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Islamic Podcast App</h1>
+    </header>
+    <div class="container">
+        <div class="player">
+            <h2>Player</h2>
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="favorites">
+            <h2>Favorites</h2>
+            <ul>
+                <li>Podcast 1 <button class="button">Add to Favorites</button></li>
+                <li>Podcast 2 <button class="button">Add to Favorites</button></li>
+            </ul>
+        </div>
+        <div class="browse">
+            <h2>Browse Podcasts</h2>
+            <ul>
+                <li>Podcast A <button class="button">Listen</button></li>
+                <li>Podcast B <button class="button">Listen</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
